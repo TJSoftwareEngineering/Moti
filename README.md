@@ -20,7 +20,7 @@ If your image is just a single image, add it with the full resolution with 1 row
 
 *please note that tilesets should have uniform size and spacing for all tiles. 
 
-##### Animations
+### Animations
 If your tileset is an animation, or contains an animation, you can use the addAnimation(tileset,startFrame,endframe,running,loop,fps) function to define the properties of your animation. For example:
 
 `myDemo.addAnimation(2, 0, 7, true, true, 8);`
@@ -42,16 +42,16 @@ function main(){
 ```
 Here you can see several drawing functions
 
-#### clearScreen()
+### clearScreen()
 Clears the screen before drawing a new frame
 
-#### drawSprite(set,tile,x,y,sizeX,sizeY)
+### drawSprite(set,tile,x,y,sizeX,sizeY)
 Draws an individual tile from a tileSet. The tile is is the number of the tile sequantially in the set, reading tiles from left to right and top to bottom.  
 
-#### drawMap(mapArray,tileSet,x,y)
+### drawMap(mapArray,tileSet,x,y)
 You can draw an entire array of tiles as a map. A map is a multi-dimensional array, where each element of an array contains another array representing a row of tiles. All tiles used in a map should be stored in the same file.
 
-#### drawAnimation(animationNum,x,y,sizeX,sizeY)
+### drawAnimation(animationNum,x,y,sizeX,sizeY)
 Draw an animation at the specified coordinated and scaled size. 
 
 
